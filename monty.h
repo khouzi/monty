@@ -40,13 +40,13 @@ typedef struct instruction_s
 		char *opcode;
 		void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-/**********Function_operation***********************/
+
 void pop(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
-/***********Arithmetique_Functio*******************/
+
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
@@ -54,7 +54,7 @@ void sub(stack_t **stack, unsigned int line_number);
 void division(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
-/*************Other Function**********************/
+
 void get_func(stack_t **stack, unsigned int line_number, char *opcode);
 char *get_opcode(void);
 void free_stack(stack_t *stack);
