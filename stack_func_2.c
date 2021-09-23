@@ -1,10 +1,12 @@
 #include "monty.h"
+
 /**
  * pall - print all data in stack
  * @stack: stack
  * @line_number: line number in monty .m file
  * Return: void
  */
+
 void pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
@@ -35,6 +37,7 @@ void pint(stack_t **stack, unsigned int line_number)
 	}
 	printf("%d\n", (*stack)->n);
 }
+
 /**
  *nop - does nothing
  *@stack: pointer to the top of the stack
@@ -42,6 +45,7 @@ void pint(stack_t **stack, unsigned int line_number)
  *
  *Return: void
  */
+
 void nop(stack_t **stack, unsigned int line_number)
 {
 	(void) line_number;
